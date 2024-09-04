@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.CoverSpace{
+    flex: 1;
+}
+
+.item1 {
+    grid-area: first;
+}
+.item2 {
+    grid-area: second;
+}
+.item3 {
+    grid-area: third;
+}
+.item4 {
+    grid-area: fourth;
+}
+.item5 {
+    grid-area: fifth;
+}
+.item6 {
+    grid-area: sixth;
+}
+.item7 {
+    grid-area: seventh;
+}
+.item8 {
+    grid-area: eighth;
+}
+.item9 {
+    grid-area: ninth;
+}
+.item10{
+    grid-area: tenth;
+};
+
+
+header{
+
+    background-color:aquamarine;
+    padding: 30px;
+}
+
+.HeaderText{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: xxx-large;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+    z-index: 100;
+}
+
+.Bodyy{
+    flex: 1;
+    width: 90%;
+    position: relative;
+    padding: 20px;
+    height: auto;
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 10px;
+    display: flex; /* Ensure content inside is flexible */
+    justify-content: center; /* Center grid content horizontally */
+    align-items: center; /* Center grid content vertically */
+}
+
+.grid {
+    height: 100%; /* Make grid take full height of the .Body container */
+    width: 100%; /* Make grid take full width of the .Body container */
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 3 columns */
+    grid-template-rows: repeat(3, 240px); /* Adjust to fit within 80vh */
+    gap: 10px; /* Adjust the gap between items */
+}
+
+.Card{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #464646;
+    box-shadow: 0 0 10px rgba(177, 177, 177, 0.1);
+    transition: all 0.3s;
+}
+
+.top{
+    z-index: 10;
+    font-size: x-large;
+    text-align: left;
+}
+
+.forCoveringSpace{
+    flex: 1;
+}
+
+.CardInner{
+    padding: 10px;
+    z-index: 1;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    gap: 10px;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.CardInnerP{
+    text-align: center;
+    font-weight: bolder;
+    /* position: relative; */
+}
+
+.bottom{
+    z-index: 10;
+    font-size: x-large;
+    text-align: right;
+}
