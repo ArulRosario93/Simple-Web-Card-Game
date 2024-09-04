@@ -46,14 +46,9 @@
     grid-area: tenth;
 };
 
-
-header{
-
+.HeaderText{
     background-color:aquamarine;
     padding: 30px;
-}
-
-.HeaderText{
     text-align: center;
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
